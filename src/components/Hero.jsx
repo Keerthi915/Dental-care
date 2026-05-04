@@ -21,7 +21,7 @@ const Hero = () => {
           </div>
           
           <h1 className="hero-title">
-            Your Smile Deserves the <span>Best Care</span> in Secunderabad
+            Your Smile Deserves the <span>Best Care</span>
           </h1>
           <p className="hero-subtitle">
             Experience painless, modern dental treatments with Pooja Dental Care. We prioritize your comfort and dental health above all.
