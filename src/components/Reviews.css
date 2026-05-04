@@ -1,0 +1,137 @@
+.google-rating-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(241, 245, 249, 0.9));
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid #f59e0b;
+}
+
+@media (max-width: 768px) {
+  .google-rating-banner {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.rating-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .rating-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.stars {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.rating-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.rating-text .score {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #f59e0b;
+}
+
+.btn-outline {
+  border: 2px solid var(--text-main);
+  color: var(--text-main);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--text-main);
+  color: white;
+}
+
+.mt-5 {
+  margin-top: 4rem;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.review-card {
+  padding: 2rem;
+  border-radius: 16px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.quote-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: var(--accent);
+  opacity: 0.5;
+}
+
+.review-stars {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.review-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.review-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--accent);
+  padding-top: 1rem;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.review-date {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
